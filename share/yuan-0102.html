@@ -35,6 +35,8 @@
         var viewWidth = $(window).width();
         if(viewWidth < 1800){
             $('.demo').css({width: '100%'});
+        } else {
+            $('.demo').css({width: 1800});
         }
 
         $('.lazy').find('img').lazyload({
