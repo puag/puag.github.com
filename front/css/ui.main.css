@@ -33,7 +33,7 @@ html[xmlns] .clearfix{display:block;}
 .menu{ width:1200px;margin:0 auto;}
 .nav-list li{ float:left;  display:inline;}
 .nav-list li i{ float:right; width:1px; height:30px; margin-top:15px;border-right:1px dotted #675e5e;}
-.nav-list li a{ float:left; margin:0 10px; padding:0 25px;color:#bbb; font-family:'微软雅黑';font-size:17px;}
+.nav-list li a{ float:left; margin:0 10px; padding:0 25px;text-transform:uppercase;color:#bbb; font-family:'微软雅黑';font-size:17px;}
 .nav-list li a:hover{background:#343434;text-decoration:none; }
 .nav-list li a.cur{background:#033b70;color:#fff;}
 /* content */
@@ -41,8 +41,8 @@ html[xmlns] .clearfix{display:block;}
 .nav{ float:left;}
 .nav li{ float:left;}
 .nav li a{ float:left; width:110px; height:32px; margin-right:10px; text-shadow:1px 1px 1px #ccc; border:1px solid #ddd;border-bottom:none; border-top-left-radius:5px;border-top-right-radius:5px;  display:inline;  text-align:center;}
-.nav li a:hover,.nav li a.cur{background:#fff;  color:#f60; border:1px solid #ccc; border-bottom:none; text-decoration:none;}
-.nav li a.cur{ position:relative;}
+.nav li a:hover,.nav li a.cur{background:#fff; color:#f60; border:1px dashed #ccc; border-bottom:none; text-decoration:none;}
+.nav li a.cur{ position:relative; border:1px solid #ccc; border-bottom:none;}
 .container{ width:1200px; margin:0 auto;}
 .main{ background:#fff; padding:10px;min-height:580px; border:1px solid #ccc;box-shadow:0 2px 5px #aaa; border-top:none;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
 .list{ width:100%;}
