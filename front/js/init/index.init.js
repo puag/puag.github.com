@@ -9,11 +9,6 @@ Modernizr.load([
         load: ['front/js/libs/jquery-1.2.6.min.js', 'front/js/ui.common.js'],
         complete: function(){
 
-        }
-    },
-    {
-        load: 'ui.index.js',
-        complete: function(){
 
         }
     }

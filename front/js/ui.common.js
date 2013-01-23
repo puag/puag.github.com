@@ -4,63 +4,49 @@
  * @time: 2013-1-21 上午11:13
  * @info:
  */
-;(function(window){
-    window.ui = window.ui || {};
-    ui = {
-        id: function(){
-            return document.getElementById(arguments[0]);
-        },
-        tab: function(node){
-            var that = this,
-                obj = this.id(node),
-                tag = obj.getElementsByTagName('a'),
-                index = 0,
-                content = null,
-                j;
+(function($){
+    /**
+     * common tab
+     * @param options
+     */
+    $.fn.utilTab = function(options){
+        var defaults = {
+                tag       : 'li',    // tab name
+                subName   : '.utilTabSub', // sub class name
+                current   : 'cur',    // current class name
+                eventType : 'hover', // event type
+                showType  : 'show'   // show effect type
+            },
+            opts = $.extend({}, defaults, options),
+            that = $(this);
 
-            for (var i = 0, len = tag.length; i < len; i++) {
-                tag[i].index = i + 1;
+        that[opts.eventType](function() {
+            var idx = $(this).index();
+            $(this).addClass(opts.current).siblings().removeClass(opts.current);
+            that.find(opts.subName).eq(idx)[opts.showType]().siblings(opts.subName).hide();
+        });
+        /*
+        that.find(opts.tag)[opts.eventType](function() {
+            var idx = $(this).index();
+            $(this).addClass(opts.current).siblings().removeClass(opts.current);
+            that.find(opts.subName).eq(idx)[opts.showType]().siblings(opts.subName).hide();
+        });
+        */
+    };
+    $.fn.tabEffect = function(options){
+        var defaults = {
+                tag       : 'tr',       // tab name
+                current   : 'hover',    // current class name
+                eventType : 'hover'     // event type
+            },
+            opts = $.extend({}, defaults, options),
+            that = $(this);
 
-                tag[i].onclick = function(){
-                    for (j = 0; j < len; j++) {
-                        tag[j].className = '';
-                        content = that.id('content' + (j + 1));
-                        if(content != null){
-                            content.style.display = 'none';
-                        } else {
-                            alert('子菜单不存在');
-                            return false;
-                        }
-                    }
-                    that.id('content' + this.index).style.display = 'block';
-                    this.className = 'cur';
-                }
-
-            }
-            this.search();
-        },
-        search: function(){
-            var that = this,
-                wrap = that.id('s-search'),
-                lab = wrap.getElementsByTagName('label'),
-                content = null,
-                j = 0;
-
-            for (var i = 0, len = lab.length; i < len; i++) {
-                lab[i].index = i + 1;
-                lab[i].onclick = function(){
-                    for (j = 0; j < len; j++) {
-                        lab[j].className = '';
-                        content = that.id('g-search' + (j + 1));
-                        content.style.display = 'none';
-                    }
-                    that.id('g-search' + this.index).style.display = 'block';
-                    this.className = 'cur';
-                }
-
-            }
-
-        }
-    }
-})(window);
-ui.tab('nav');
+        that.find(opts.tag + ':even').addClass('even');
+        that.find(opts.tag).hover(function() {
+            $(this).addClass(opts.current).siblings().removeClass(opts.current);
+        }, function(){
+            $(this).removeClass(opts.current);
+        });
+    };
+}(jQuery));
