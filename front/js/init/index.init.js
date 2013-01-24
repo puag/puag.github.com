@@ -6,10 +6,23 @@
  */
 Modernizr.load([
     {
-        load: ['front/js/libs/jquery-1.2.6.min.js', 'front/js/ui.common.js'],
+        load: ['front/js/libs/jquery-1.3.2.min.js', 'front/js/ui.common.js'],
         complete: function(){
-
-
+            indexInit();
+            listHover();
         }
     }
 ]);
+
+function indexInit(){
+    $('#homeContainer').utilTab({
+        tag: '#nav li',
+        subName: '.content'
+    });
+}
+
+function listHover(){
+    $('.content').tabEffect({
+        tag: '.list'
+    });
+}

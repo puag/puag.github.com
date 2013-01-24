@@ -6,21 +6,22 @@
  */
 Modernizr.load([
     {
-        load: ['../../front/js/libs/jquery-1.2.6.min.js', '../../front/js/ui.js.js'],
+        load: ['../front/js/libs/jquery-1.3.2.min.js', '../front/js/ui.js.js'],
         complete: function(){
             addHead();
         }
     },
     {
-        load: '',
+        load: ['../front/js/ui.common.js'],
         complete: function(){
-
+            indexInit();
         }
-    },
-    {
-//        load: '../../front/js/ui.common.js',
-//        complete: function(){
-
-//        }
     }
 ]);
+
+function indexInit(){
+    $('#homeContainer').utilTab({
+        tag: '#nav li',
+        subName: '.content'
+    });
+}

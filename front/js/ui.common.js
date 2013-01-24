@@ -20,18 +20,11 @@
             opts = $.extend({}, defaults, options),
             that = $(this);
 
-        that[opts.eventType](function() {
-            var idx = $(this).index();
-            $(this).addClass(opts.current).siblings().removeClass(opts.current);
-            that.find(opts.subName).eq(idx)[opts.showType]().siblings(opts.subName).hide();
-        });
-        /*
         that.find(opts.tag)[opts.eventType](function() {
-            var idx = $(this).index();
+            var idx = $(this).prevAll().length;
             $(this).addClass(opts.current).siblings().removeClass(opts.current);
             that.find(opts.subName).eq(idx)[opts.showType]().siblings(opts.subName).hide();
         });
-        */
     };
     $.fn.tabEffect = function(options){
         var defaults = {
@@ -50,3 +43,4 @@
         });
     };
 }(jQuery));
+

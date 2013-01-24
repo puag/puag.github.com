@@ -1,56 +1,33 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>常用网址</title>
-    <link type="text/css" rel="stylesheet" href="front/css/ui.main.css" />
-    <script type="text/javascript" src="front/js/libs/modernizr.js"></script>
+    <meta charset="utf-8"/>
+    <title>test</title>
+    <link type="text/css" rel="stylesheet" href="../front/css/ui.main.css" />
+    <script type="text/javascript" src="../front/js/libs/modernizr.js"></script>
 </head>
 <body>
-<div class="header-wrap">
-    <div class="header">
-        <div class="logo">常用网址</div>
-        <div class="search">
-            <div id="s-search" class="lab">
-                <label for="google" class="cur">Google</label> <input checked type="radio" name="search" id="google">
-                <label for="baidu">Baidu</label> <input type="radio" name="search" id="baidu">
-            </div>
-            <div id="g-search1" class="search-items">
-                <form method="get" action="http://www.google.com.hk/search" target="_blank">
-                    <input type="hidden" value="zh-CN" name="hl"/> <input type="text" name="q" class="input-text" id="">
-                    <button class="input-button google-btn" type="submit" value="Google 搜索"><span></span></button>
-                </form>
-            </div>
-            <div id="g-search2" class="search-items" style="display:none;">
-                <form action="http://www.baidu.com/s" name="f" target="_blank">
-                    <input type="text" name="word" class="input-text" id=""><input class="input-button baidu-btn" type="submit" value="百度一下">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!--/header-->
 <div class="nav-wrap">
     <div class="menu">
-        <ul class="nav-list">
-            <li><a class="cur" href="index.html">home</a><i></i></li>
-            <li><a href="view/js.html">javascript</a><i></i></li>
-            <li><a href="#">jquery</a><i></i></li>
-            <li><a href="#">CSS</a><i></i></li>
-            <li><a href="#">html5</a><i></i></li>
-            <li><a href="#">UI</a><i></i></li>
-            <li><a href="#">python</a><i></i></li>
-            <li><a href="#">ide</a><i></i></li>
-            <li><a href="#">other</a></li>
+        <ul id="headNav" class="nav-list">
+            <li><a href="../index.html">home</a><i></i></li>
+            <li><a class="cur" href="js.html">javascript</a><i></i></li>
+            <li><a href="jq.html">jquery</a><i></i></li>
+            <li><a href="css.html">CSS</a><i></i></li>
+            <li><a href="html5.html">html5</a><i></i></li>
+            <li><a href="ui.html">UI</a><i></i></li>
+            <li><a href="python.html">python</a><i></i></li>
+            <li><a href="ide.html">ide</a><i></i></li>
+            <li><a href="other.html">other</a></li>
         </ul>
     </div>
 </div>
 <div id="homeContainer" class="container">
     <div class="category">
         <ul id="nav" class="nav clearfix">
-            <li class="cur"><a hidefocus="true" href="#">名站</a></li>
-            <li><a hidefocus="true" href="#">网站</a></li>
-            <li><a hidefocus="true" href="#">技术</a></li>
+            <li class="cur"><a hidefocus="true" href="#">Core</a></li>
+            <li><a hidefocus="true" href="#">Dom/Event</a></li>
+            <li><a hidefocus="true" href="#">UI</a></li>
         </ul>
     </div>
     <div class="main">
@@ -170,11 +147,6 @@
         </div>
     </div>
 </div>
-<div class="f-outer">
-    <div class="footer">
-        <p>&copy; <a target="_blank" href="http://jikey.cnblogs.com">豪情</a></p>
-    </div>
-</div>
+<script type="text/javascript" src="../front/js/init/js.init.js"></script>
 </body>
-<script type="text/javascript" src="front/js/init/index.init.js"></script>
 </html>

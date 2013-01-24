@@ -31,24 +31,26 @@ html[xmlns] .clearfix{display:block;}
 .lab label.cur{ color:#36c;}
 .search-items{ float:right;}
 /* nav */
-.nav-wrap{ height:60px; line-height:60px;background:#1A1A1A;}
+.nav-wrap{ height:60px; line-height:60px;background:#1A1A1A;box-shadow:1px 1px 1px #fff;}
 .menu{ width:1200px;margin:0 auto;}
 .nav-list li{ float:left;  display:inline;}
 .nav-list li i{ float:right; width:1px; height:30px; margin-top:15px;border-right:1px dotted #675e5e;}
-.nav-list li a{ float:left; margin:0 10px; padding:0 25px;text-transform:uppercase;color:#bbb; font-family:'微软雅黑';font-size:17px;}
+.nav-list li a{ float:left; margin:0 10px; padding:0 25px;text-transform:uppercase;color:#bbb;text-shadow:1px 1px 1px #000; font-family:'微软雅黑';font-size:17px;}
 .nav-list li a:hover{background:#343434;text-decoration:none; }
-.nav-list li a.cur{background:#033b70;color:#fff;}
+.nav-list li a.cur{background:#033b70;color:#fff;text-shadow:1px 1px 1px #003;}
 /* content */
 .category{ height:32px; line-height:32px; padding-top:10px; border-bottom:1px solid #ccc;}
 .nav{ float:left;}
 .nav li{ float:left;}
-.nav li a{ float:left; width:110px; height:32px; margin-right:10px; text-shadow:1px 1px 1px #ccc; border:1px solid #ddd;border-bottom:none; border-top-left-radius:5px;border-top-right-radius:5px;  display:inline;  text-align:center;}
-.nav li a:hover,.nav li a.cur{background:#fff; color:#f60; border:1px dashed #ccc; border-bottom:none; text-decoration:none;}
-.nav li a.cur{ position:relative; border:1px solid #ccc; border-bottom:none;}
+.nav li a{ float:left; width:110px; height:32px; margin-right:10px; color:#666;font-size:16px;  font-family:'微软雅黑'; text-shadow:1px 1px 1px #fff; border:1px solid #ddd;border-bottom:none; border-top-left-radius:5px;border-top-right-radius:5px;  display:inline;  text-align:center;}
+.nav li a:hover,.nav li.cur a{background:#F5F5F5; color:#f60; border:1px dashed #ccc; border-bottom:none; text-decoration:none;}
+.nav li.cur a{ position:relative; border:1px solid #ccc; border-bottom:none;}
 .container{ width:1200px; margin:0 auto;}
-.main{ background:#fff; padding:10px;min-height:580px; border:1px solid #ccc;box-shadow:0 2px 5px #aaa; border-top:none;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
-.list{ display:inline-block; *display:inline; *zoom:1; width:31%; margin-right:20px;}
-.content{ margin-right:-20px;}
+.main{ background:#f5f5f5; padding:20px;min-height:580px; border:1px solid #ccc; border-top:none;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.content{ margin-right:-44px;}
+.content .hover{background:#fff7e1;}
+.list{ display:inline-block; *display:inline; *zoom:1; width:29%; margin-right:20px; padding:5px 10px; margin-bottom:30px;background:#fff; border-radius:5px;box-shadow:1px 1px 2px #A7A8AD;}
+.no-boxshadow .list{border:1px solid #dcdcdc;}
 .list h1{ font-size:14px; margin-bottom:5px; line-height:30px; text-indent:10px;border-bottom:1px dotted #ccc;}
 .list strong{ float:left; font-weight:bold; padding:2px 10px;}
 .list a{ float:left; display:inline;border-radius:3px;padding:2px 10px; margin:5px 15px 5px 0;behavior:url(PIE.htc);}

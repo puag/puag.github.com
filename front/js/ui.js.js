@@ -11,10 +11,12 @@ function addHead(){
 
     head.id = 'header';
     footer.id = 'footer';
-    container.before(head);
+    $('body').prepend(head);
     container.after(footer);
 
-    $('#header').load('../../inc/head.html');
-    $('#footer').load('../../inc/footer.html');
+    $('#header').load('../inc/head.html', function(){
+        $(this).slideDown(1000);
+    });
+    $('#footer').load('../inc/footer.html');
 }
 
