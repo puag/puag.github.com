@@ -39,14 +39,14 @@ html[xmlns] .clearfix{display:block;}
 .nav-list li a:hover{background:#343434;text-decoration:none; }
 .nav-list li a.cur{background:#033b70;color:#fff;text-shadow:1px 1px 1px #003;}
 /* content */
-.category{ height:32px; line-height:32px; padding-top:10px; border-bottom:1px solid #ccc;}
+.category{ height:32px; line-height:32px; padding-top:10px; overflow:hidden;}
 .nav{ float:left;}
 .nav li{ float:left;}
 .nav li a{ float:left; width:110px; height:32px; margin-right:10px; color:#666;font-size:16px;  font-family:'微软雅黑'; text-shadow:1px 1px 1px #fff; border:1px solid #ddd;border-bottom:none; border-top-left-radius:5px;border-top-right-radius:5px;  display:inline;  text-align:center;}
 .nav li a:hover,.nav li.cur a{background:#F5F5F5; color:#f60; border:1px dashed #ccc; border-bottom:none; text-decoration:none;}
 .nav li.cur a{ position:relative; border:1px solid #ccc; border-bottom:none;}
 .container{ width:1200px; margin:0 auto;}
-.main{ background:#f5f5f5; padding:20px;min-height:580px; border:1px solid #ccc; border-top:none;border-bottom-left-radius:5px;border-bottom-right-radius:5px;}
+.main{ min-height:580px; }
 .content{ margin-right:-44px;}
 .content .hover{background:#fff7e1;}
 .list{ display:inline-block; *display:inline; *zoom:1; width:29%; margin-right:20px; padding:5px 10px; margin-bottom:30px;background:#fff; border-radius:5px;box-shadow:1px 1px 2px #A7A8AD;}
