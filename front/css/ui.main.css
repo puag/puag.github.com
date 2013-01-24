@@ -39,20 +39,21 @@ html[xmlns] .clearfix{display:block;}
 .nav-list li a:hover{background:#343434;text-decoration:none; }
 .nav-list li a.cur{background:#033b70;color:#fff;text-shadow:1px 1px 1px #003;}
 /* content */
-.category{ height:32px; line-height:32px; padding-top:10px; overflow:hidden;}
+.category{ height:32px; line-height:32px; padding-top:10px; }
 .nav{ float:left;}
 .nav li{ float:left;}
 .nav li a{ float:left; width:110px; height:32px; margin-right:10px; color:#666;font-size:16px;  font-family:'微软雅黑'; text-shadow:1px 1px 1px #fff; border:1px solid #ddd;border-bottom:none; border-top-left-radius:5px;border-top-right-radius:5px;  display:inline;  text-align:center;}
-.nav li a:hover,.nav li.cur a{background:#F5F5F5; color:#f60; border:1px dashed #ccc; border-bottom:none; text-decoration:none;}
-.nav li.cur a{ position:relative; border:1px solid #ccc; border-bottom:none;}
+.nav li a:hover,.nav li.cur a{background:#e6eeff; color:#f60; border:1px dashed #ccc; border-bottom:none; text-decoration:none;}
+.nav li.cur{ position:relative; bottom:-1px; z-index:5555;}
+.nav li.cur a{ border:1px solid #d8e3ff; color:#036; border-bottom:none;}
 .container{ width:1200px; margin:0 auto;}
 .main{ min-height:580px; }
 .content{ margin-right:-44px;}
 .content .hover{background:#fff7e1;}
-.list{ display:inline-block; *display:inline; *zoom:1; width:29%; margin-right:20px; padding:5px 10px; margin-bottom:30px;background:#fff; border-radius:5px;box-shadow:1px 1px 2px #A7A8AD;}
+.list{ display:inline-block; *display:inline; *zoom:1; width:29%; margin-right:20px; margin-bottom:30px;background:#fff; border-radius:5px;box-shadow:1px 1px 2px #A7A8AD;}
 .no-boxshadow .list{border:1px solid #dcdcdc;}
-.list h1{ font-size:14px; margin-bottom:5px; line-height:30px; text-indent:10px;border-bottom:1px dotted #ccc;}
+.list h1{ font-size:14px; margin-bottom:5px; line-height:30px; color:#666;border-radius:5px 5px 0 0; text-indent:10px;border-bottom:1px dotted #ccc;background:#e6eeff;}
 .list strong{ float:left; font-weight:bold; padding:2px 10px;}
-.list a{ float:left; display:inline;border-radius:3px;padding:2px 10px; margin:5px 15px 5px 0;behavior:url(PIE.htc);}
+.list a{ float:left; display:inline;border-radius:3px;padding:2px 10px; margin:5px 10px 5px 0;behavior:url(PIE.htc);}
 .list a:hover{ background:#369; color:#fff; text-decoration:none;}
-.l-inner{ margin-right:-20px;}
+.l-inner{ margin-right:-20px; padding:0 0 0 5px;}
